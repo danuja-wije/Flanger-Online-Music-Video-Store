@@ -1,0 +1,142 @@
+
+
+.outer_box{
+    width: 900px;
+    height: 350px;
+    background-color: rgba(235, 235, 235, 0.788);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box1{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: -2px -2px 6px rgba(95, 224, 247, 0.1),5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.price {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(35, 35, 243, 0.938);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.price h2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    padding-top: 30px;
+}
+.price p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
+
+.box1 h3{
+    padding: 5px 0;
+    text-align: center;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box1 p {
+    font-size: 14px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.box1 button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(35, 35, 243, 0.938);
+    margin: 10px 50px;
+    cursor: pointer;
+}
+.payment_model {
+    width: 1386.4px;
+    height: 100%;
+    background-color: rgba(0, 0,0, .7);
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.paybox {
+    width: 600px;
+    height: 600px;
+   background-color: rgb(182, 178, 178);
+   border-radius: 10px;
+   position: relative;
+
+}
+.paybox table img{
+   width: 30px;
+   height: 30px;
+   background-color: none;
+   background: none;
+}
+.payment ,.paybox h4{
+   margin: 10px 15px;
+}
+
+select  {
+    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background-color: rgba(224, 223, 223, 0.829);
+}
+
+
+.payImg {
+    margin-top: 2px;
+    margin: 5px 3px;
+}
+.cvv {
+   background: url(../images/cvv_icon.png) no-repeat;
+   background-size: cover;
+   width: 150x;
+   height: 150px;
+}
+#payment_detail {
+    text-align: center;
+    font-size: 25px;
+}
+
+#submitBtn {
+    padding: 5px 20px;
+    margin-top: 10px;
+    margin-left: 250px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.paybox input {
+    background-color: rgba(224, 223, 223, 0.829);
+}
+
+.close button b{
+    font-size: 35px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    left: 200px;
+}
+.close button {
+    position: absolute;
+    background: none;
+    border: none;
+    float: left;
+}
+.close {
+   margin-left: 580px;
+}

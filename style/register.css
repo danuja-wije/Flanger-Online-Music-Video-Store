@@ -1,0 +1,140 @@
+*{margin: 0;
+	padding: 0}
+
+a{
+	text-decoration: none;
+}
+
+.active h3{
+	opacity: .5;
+}
+body{
+
+	background:  url(../images/main_bacground.jpg) no-repeat fixed 0 0;
+background-size: cover;
+position: relative;
+text-shadow: none!important;
+color: black;
+padding-top: 35px;
+	box-sizing: border-box;
+	
+}
+
+
+.box {
+	
+	position: relative;
+	width: 600px;
+	margin: 20px auto;
+	padding: 40px 40px 60px;
+	background:none;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: -5px -5px 10px rgba(255,255,255,0.05),5px 5px 15px rgba(0,0,0,0.5);
+
+
+}
+
+.btnMain{
+	width: 50%;
+	margin:0 auto;
+	position: relative;
+	box-shadow: -2px -2px 6px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.8);
+	border-radius: 30px;
+}
+
+.mBtn {
+
+	padding: 10px 20px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	position: relative;
+
+}
+
+.btnMain a{
+	color: black;
+}
+
+.textBox{
+
+	border:none;
+	outline:none;
+	padding: 0 50px;
+	background: none;
+	border-radius: 30px;
+	margin: 3px auto;
+	box-shadow: inset -2px -2px 3px rgba(255,255,255,0.1);/*,inset 5px 5px 15px rgba(0,0,0,0.8);*/
+	color: black;
+
+}
+
+.basicDetail ::placeholder {
+
+	color: black;
+	opacity: .5;
+}
+.active{
+	background: #2E4053  
+}
+.basicDetail input {
+	padding: 5px 40px;
+
+	border-radius: 30px;
+}
+
+
+select {
+
+	border:none;
+	outline:none;
+	padding: 0 0 -5px 0;
+	background: none;
+	border-radius: 30px;
+	margin: 5px auto;
+	box-shadow: inset -2px -2px 3px rgba(255,255,255,0.1);/*,inset 5px 5px 15px rgba(0,0,0,0.8);*/
+	color: black;
+}
+
+.box table img{
+	width: 30px;
+	height: 30px;
+	background-color: none;
+	background: none;
+}
+ table select{
+	 width: 15px;
+	 float: right;
+	margin-right: 100px;
+	 padding: 2px;
+	 border-color: black;
+ }
+
+ table select option{
+	 background-color: rgb(46, 170, 192);
+	 opacity: .7;
+ }
+
+ table {
+	 margin-top: 10px;
+ }
+ 
+
+.box input {
+	background: none;
+	padding: 5px 40px;
+	margin-top: 15px;
+	border-radius: 30px;
+ }
+
+ .log_box{
+display: none;
+height: 463px;
+ }
+
+.test{
+	transform: rotate(45deg);
+}
+

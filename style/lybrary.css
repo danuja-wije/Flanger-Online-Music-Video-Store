@@ -1,0 +1,153 @@
+
+a {
+    color: black;
+}
+
+
+.content {
+    height: 760px;
+}
+.wrapper{
+    overflow: hidden;
+}
+#side_bar {
+    position: relative;
+    width: 250px;
+    height: 770px;
+    background-color: rgba(255, 255, 255, 0.705);
+    left: -400px;
+    transition: .4s;
+}
+
+#side_bar.anim {
+    left: 0px;
+}
+.out_box {
+    margin-left: 15px;
+    width: 250px;
+    height: 770px;
+    overflow: hidden;
+}
+
+
+#side_bar ul li {
+    padding: 15px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    border-right: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+
+
+.submenu_1 ul{
+    display: none;
+}
+
+#side_bar ul li:hover .submenu_1 ul{
+    display: block;
+
+}
+.submenu_1{
+    width: 250px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.815);
+    margin-left: 246px;
+    margin-top: -10px;
+}
+.submenu_1 ul li{
+    text-align: left;
+}
+
+#side_bar ul li a:hover {
+    color: rgba(0, 0, 0, 0.603);
+}
+.out_box .toggle_btn {
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+.out_box .toggle_btn span {
+    display: block;
+    width: 18px;
+    height: 3px;
+    margin-bottom: 3px;
+    background: black;
+    transition: 0.4s ease;
+}
+
+#cont_box {
+    position: absolute;
+    width: 1355px;
+    height: 750px;
+    margin:0 15px;
+     top: 24%;
+     transition: .4s;
+}
+#cont_box.anim2{
+    transform: scaleX(0.82);
+margin-left: 126px;
+}
+.row {
+    width: 100%;
+    height: 220px;
+    margin:10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 6px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.8);
+
+}
+.card:first-child{
+    margin-left: 40px;
+}
+.card:last-child{
+    margin-right: 40px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.page_toggle {
+    width: 220px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+}
+.page_toggle button {
+    display: inline-block;
+    justify-content: center;
+    padding: 2px 5px;
+    background-color: rgba(253, 253, 253, 0.76);
+    border: none;
+    box-shadow: -2px -2px 6px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.8);
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.change .bar1{
+     transform: rotate(-45deg) translate(-9px,0);
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-8px,0px);
+}
+.change .bar2{
+    opacity: 0;
+}
+
+#head {
+    position: absolute;
+    left: 48%;
+}
+

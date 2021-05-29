@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flanger register</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/register.css">
+	<script src="js/register.js"></script>
+
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<a href="index.htm">
+				<img src="images/logo.png "  alt="Flanger Logo" width="150px" height="75">
+				</a>
+			</div>
+			<div class="search">
+				<form method="GET" action="index.htm">
+					<input type="search" class="search_box" placeholder="Type Any Song Or Artist ..." name="">
+					<button type="submit" class="submit"><img src="images/search_icon.png" ></button>
+				</form>
+			</div><!-- search -->
+			
+	</header>
+	<div class="content">
+		<div class="nav_bar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Library</a></li>
+				<li><a href="#">Artist</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+
+		</div><!-- nav_bar -->
+		<div class="reg_box">
+		<div class="box">
+			<div class="btnMain">
+				<button class="mBtn" onclick="reg()" > <h3 class="b1">Register</h3></button>
+				<button class="mBtn" onclick="login()"><h3 class="b2">Sign in</h3></button>
+			</div>
+			<form action="register.php" method="POST" onSubmit="return checkPassword()">
+				<table class="basicDetail">
+					<tr>
+						<td style="color: rgba(0, 0, 0, 0.5);">Choose Account type :</td>
+					</tr>
+					<tr>
+						<td style="color: rgba(0, 0, 0, 0.5);">
+							Fan<input type="radio" name="acc_type" id="radio" value="fan" >
+							Creator <input type="radio" name="acc_type" id="radio" value="creator" >
+						</td>
+					</tr>
+					<tr>
+					<td><input class="textBox" type="text" placeholder="First name" name="fname" required></td>
+					</tr>
+					<tr>
+					<td><input class="textBox" type="text" placeholder="Last name" name="lname" required></td>
+					</tr>
+					<tr>
+						<td><input class="textBox" type="text" placeholder="Email Address" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required></td>
+					</tr>
+					<tr>
+						<td><input class="textBox" type="Password" id="pwd" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+					</tr>
+					
+					<tr>
+						<td><input class="textBox" type="password" id="confpwd" placeholder="Repeat Password" name="name" required></td>
+					</tr>
+					<tr>
+						<td>
+							*password must contain minimum 8 charactor & 1 Upper case charactor & 1 lower case charactor and 1 number*
+						</td>
+					</tr>
+				</table> 
+
+				<br><input class="inputStyle" id="checkBox" type="checkbox" onclick="enableButton('btn1')"> Accept <a href="#">privacy policy</a>  and terms.<br/><br/>				
+
+				<input type="submit" name="submitBtn" id="submitBtn" value="Create Account" disabled>
+
+			</form>
+		</div><!-- box -->
+	</div>
+	<div class="log_box">
+		<div class="box">
+			<div class="btnMain">
+				<button class="mBtn" onclick="reg()" > <h3 class="b1">Register</h3></button>
+				<button class="mBtn" onclick="login()"><h3 class="b2">Sign in</h3></button>
+			</div>
+			<form action="login.php" method="POST">
+				<table class="basicDetail">
+					<tr>
+						<td style="color: rgba(0, 0, 0, 0.5);">Choose Account type :</td>
+					</tr>
+					<tr>
+						<td style="color: rgba(0, 0, 0, 0.5);">
+							Fan<input type="radio" name="acc_type" id="radio" value="fan" >
+							Creator <input type="radio" name="acc_type" id="radio" value="creator" >
+						</td>
+					</tr>
+					<tr>
+						<td><input class="textBox" type="text" placeholder="Enter Email Address" name="log_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required></td>
+					</tr>
+					<tr>
+						<td><input class="textBox" type="Password" placeholder="Password" name="log_pw" required></td>
+					</tr>
+					<tr>
+						<td><input class="inputStyle" id="checkBox2" type="checkbox" onclick="enableButton('btn2')"> Accept <a href="#">privacy policy</a>  and terms.</td>
+					</tr>
+					
+					<tr>
+						<td class="log">
+							<input  type="submit" name="login" id="submitBtn2" value="Log in" disabled>
+						</td>
+					</tr>
+				</table> 
+			</form>
+			<table>
+				<tr>
+					<td>Quick Access with :</td>
+					<td><img src="images/google_icon.png" width="40px" height="40px">
+						<img src="images/fb_icon.png" width="40px" height="40px">
+						<img src="images/insta_icon.png" width="40px" height="40px">
+						<img src="images/twitter_icon.png" width="40px" height="40px">
+					</td>
+				</tr>
+			</table>
+		</div><!-- box -->
+		
+	</div>
+	<footer>
+		<table>
+			<tr>
+				<th>
+					<div class="footer_logo">
+						<a href="index.htm">
+						<img src="images/logo.png "  alt="Flanger Logo" width="150px" height="75">
+						</a>
+					</div><!-- footer_logo -->
+				</th>
+				<th>
+					<h3>EXPLORE</h3>
+				</th>
+				<th>
+					<h3>HELP</h3>
+				</th>
+				<th>
+					<h3>About</h3>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="location" >
+						<ul>
+							<li><img src="images/location_icon.png" height="15px" width="15px"> High level Road<br>Colombo 07<br>Sri Lanka</li>
+							<li><img src="images/phone_icon.png" height="15px" width="15px"> (+94)112 567 3465</li>
+							<li><img src="images/mail_icon.png" height="15px" width="15px"> support@flanger.com</li>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<div class="EXPLORE" >
+						<ul>
+							 <li>News</li>
+               				 <li>Artist on Flanger</li>
+                			 <li>VIDEO FALLERY</li>
+               				 <li>Price Guid</li>
+               				 <li>GIFT CARD</li>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<div class="help" >
+						<ul>
+							<li>HELP CENTER</li>
+               			 	<li>FLANGER PROTECTION</li>
+                			<li>SHOPPING GUID</li>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<div class="about">
+						<ul>
+							<li>ABOUT FLANGER</li>
+                            <li>PRIVACY POLICY</li>
+                            <li>NEWSELLER SIGN UP</li>
+                            <li>CONTACT SUPPORT</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+        </table>
+        <button id="fdback">Feedback</button>
+	</footer>
+</body>
+</html>
